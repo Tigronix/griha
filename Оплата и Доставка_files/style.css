@@ -1,0 +1,266 @@
+html, body {
+    background-color: #919191;
+	height: 100%;
+    width: 100%;
+}
+a, a:active, a:focus {outline:none;}
+.starter-template {
+    padding: 20px 0px 90px 0;
+    text-align: left;
+}
+.container {
+    width: 940px;
+}
+.mt-5 {margin-top:5px;}
+.mt-10 {margin-top:10px;}
+
+.ser {color:#6C6C6C;}
+.clear {clear:both;}
+
+.table tr:last-child td{border-bottom: 1px solid #DDDDDD;}
+
+.wrapbig {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px 0 #000000;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 0 20px;
+    width: 90%;
+	max-width:1200px;
+	min-width:1000px;
+}
+#header {
+    background:#343434;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 5px 0 #000000;
+    clear: both;
+    margin: 0 -30px;
+    position: relative;
+	padding:120px 0 3px 0;
+}
+
+#logo {
+    clear: left;
+    float: left;
+    height: 101px;
+    left: 50%;
+    margin-left: -137px;
+    position: absolute;
+    top: 10px;
+    width: 274px;
+}
+.menu {
+    border-top: 1px solid #545353;
+    height: 38px;
+    position: relative;
+}
+#menu {
+    border-top: 1px solid #232323;
+	padding-left:0;
+	height: 38px;
+	margin:0;
+}
+#menu li {
+    border-left: 1px solid #232323;
+    border-right: 1px solid #545353;
+    display: block;
+    float: left;
+    height: 38px;
+    list-style: none outside none;
+}
+#menu li:first-child {
+    border-left: medium none;
+}
+#menu li:first-child a {
+    padding-left: 30px;
+}
+#menu li.lilast {
+    border-right: medium none;
+}
+#menu li a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+#menu li.selected a, #menu li:hover a {
+    color: #D39324;
+}
+
+
+#footer {
+    background: none repeat scroll 0 0 #343434;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 5px 0 #000000;
+    clear: both;
+    height: 50px;
+    margin: -50px auto 0;
+    overflow: hidden;
+    text-align: left;
+	width: 90%;
+	max-width:1220px;
+	min-width:1020px;
+}
+#footer table {
+    width: 100%;
+}
+#footer table td {
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+#footer table td sup {
+    font-size: 10px;
+}
+
+
+/*Каталог*/
+h1 {font-size: 28px;}
+
+.short-cat a.imgwrap {width:200px; max-height:180px; overflow:hidden; cursor:pointer;}
+.short-cat .img-thumbnail {}
+
+.catopt {margin:1px 0 10px 0;}
+.catopt tr td:first-child{width:10%; white-space:nowrap; padding-right:20px; color:#6C6C6C;}
+.price {font-size:18px; font-weight:bold; color:#141414; vertical-align:middle!important; text-align:center; width:120px;}
+
+.rowcategory a {font-size:17px;  line-height:1.65;}
+.rowcategory a.act {color:#333;}
+.rowcategory a.act:hover {text-decoration:none; cursor:default;}
+.rowcategory {padding-left:10px;}
+.rowcategory.rc-p a{font-size:17px; line-height:1; display:inline-block; margin:5px 0;}
+
+.carousel-prod .carousel-indicators {
+    bottom: auto;
+    left: auto;
+    margin: 0;
+    padding-left: 0;
+    position: static;
+    width: auto;
+    z-index: 15;
+}
+.carousel-prod .carousel-indicators .active {
+    background-color: none;
+    margin: 0;
+    width:70px; height:70px; overflow:hidden;
+	border-radius:2px;
+}
+.carousel-prod .carousel-inner {border-radius:5px 5px 0 0;}
+.carousel-prod .carousel-inner img {max-height:450px; max-width:800px; display:inline-block!important;}
+.car-indicators {height:80px; text-align:center; margin-top:10px!important;}
+.car-indicators div {display:inline-block; cursor:pointer; text-align:center; width:70px; height:70px; overflow:hidden; border-radius:2px;}
+.car-indicators div img{height:70px; opacity:0.5; border-radius:2px;}
+.car-indicators div.active img {opacity:1; cursor:default;}
+.car-indicators div.active:hover {margin:0; padding:0;}
+.car-indicators div.active:hover img {cursor:default; margin:0; padding:0;}
+.car-indicators div:hover img {opacity:1;}
+
+.carousel-prod {width:800px; border-radius:6px 6px 0 0;}
+.carousel-prod .carousel-control {bottom:90px;}
+
+.modal-slide {width:802px;}
+.modal-slide .close {
+	color: #FFFFFF;
+    font-size: 17px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 20;
+}
+.carousel-prod .carousel-inner .item {text-align:center;}
+
+
+#carousel-main {height:220px;}
+#carousel-main {width:100%; padding:0 20px;}
+#carousel-main .carousel-inner .item{height:220px;}
+#carousel-main p.carus-text {overflow:hidden; height:54px; font-size:12px;}
+#carousel-main .thumbnail {margin:0;}
+#carousel-main img {max-width:183px; max-height:102px;}
+#carousel-main .carousel-control {color:#000; background:none; width:40px;}
+#carousel-main .carousel-control.right { right:-20px;}
+#carousel-main .carousel-control.left {left:-20px;}
+#carousel-main .carousel-control .glyphicon-chevron-right {left:0px; right:auto; font-size:16px;}
+#carousel-main .carousel-control .glyphicon-chevron-left {right:0px; left:auto; font-size:16px;}
+#carousel-main .carousel-control .glyphicon-chevron-left, #carousel-main .carousel-control .glyphicon-chevron-right {margin:-15px 0 0 0;}
+
+#cart {position:absolute; right:10px; top:0; line-height:20px; background:#fff; border-radius:0 0 5px 5px; padding:5px 10px;}
+#cart a {color:#333;}
+
+#cart-table tr td{vertical-align:middle;}
+#cart-table tr td:first-child img{max-width:50px; max-height:40px; border-radius:2px;}
+#cart-table .glyphicon.glyphicon-remove:hover {color:#ff0000; cursor:pointer;}
+#cart-table tr td:last-child {white-space:nowrap; opacity:0.5;}
+#cart-table tr td:last-child a {color:#333;}
+#cart-table tr td:last-child a:hover {text-decoration:none;}
+#cart-table  tr:hover td:last-child {opacity:1;}
+
+
+
+#searchresult {width:300px; border:1px dashed #CDCDCD; box-shadow:0 0 5px #585757; display:none; position:absolute; right:0; top:26px; z-index:10; background:#fff;}
+#searchresult a {display:block; position:relative; padding:5px; font-size:11px; line-height:16px; color:#303030;}
+#searchresult a img {max-width:60px; margin:0 5px 0 0; max-height:60px; float:left; opacity:0.9;}
+#searchresult .clear {border-top:1px dashed #CDCDCD;}
+#searchresult a:hover {color:#333; background:#F1F1F1;}
+#searchresult a:hover img {opacity:1;}
+#searchresult .clear:last-child {border:none;}
+
+.search-wrap {position:absolute; right:20px; top:7px;}
+.search-wrap .form-inline .has-feedback .form-control-feedback {height: 25px;
+    line-height: 25px; border-radius:6px;}
+.search-wrap .input-sm {height: 25px; border-radius:6px; width:240px;}
+
+/* Стрелка вверх */
+.iakor {position:fixed; top:0;}
+
+.a-top {width:50px;  bottom:0; top:0; left:0; position:fixed; color:#fff; background:rgba(0,0,0,0.3); display:none; text-align:center; font-size:0px; cursor:pointer; transition:all 0.3s linear 0s;}
+.a-top:before {content:""; display: inline-block; height: 100%; vertical-align: middle;}
+
+
+.a-top s {display:inline-block; vertical-align: middle; font-size:25px; opacity:0.5; transition:all 0.3s linear 0s;}
+.a-top .glyphicon-chevron-up {display:inline-block;}
+.a-top .glyphicon-chevron-down {display:none;}
+.a-top.revert .glyphicon-chevron-up {display:none;}
+.a-top.revert .glyphicon-chevron-down {display:inline-block;}
+
+.a-top:hover {background:rgba(0,0,0,0.5);}
+.a-top:hover s {opacity:0.8;}
+
+
+@media (max-width: 1120px) {
+	.a-top {width:25px;}
+	.a-top s {font-size:14px;}
+}
+@media (max-width: 1060px) {
+	.a-top {width:30px; left:50%; margin-left:465px; top:auto; bottom:0; height:50px;  z-index:100; border-radius:5px 5px 0 0;}
+}
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 08:11:52 Oct 13, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:41:47 May 07, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 373.365
+  exclusion.robots: 0.099
+  exclusion.robots.policy: 0.092
+  RedisCDXSource: 15.05
+  esindex: 0.011
+  LoadShardBlock: 339.401 (3)
+  PetaboxLoader3.datanode: 341.41 (5)
+  CDXLines.iter: 16.179 (3)
+  load_resource: 237.405 (2)
+  PetaboxLoader3.resolve: 121.483 (2)
+*/

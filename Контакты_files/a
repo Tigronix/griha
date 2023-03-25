@@ -1,0 +1,36 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(D,q,g,f,o,E,b,F,k){if(!D.maps||!D.maps.length){return}var C={minSize:[320,240]};var x=D,s=D.maps[0],F=F||s.state.lang||"ru_RU";F=F.replace("-","_");E+="_"+F;var p=window.location.protocol==="file:"?"http:":"",a=p+b+"2.1/",t=["Map","GeoObject","geoObject.addon.balloon","geoObject.addon.hint","templateLayoutFactory","control.FullscreenControl","control.GeolocationControl","control.RouteEditor","control.RulerControl","control.SearchControl","control.TrafficControl","control.TypeSelector","control.ZoomControl","mapType.storage","option.presetStorage"],v=[d(q[0]),d(q[1])],A=String(Number(new Date))+String(Math.round(Math.random()*1000000)),n=F.toLowerCase(),m="ymaps"+A,z="fid"+A,c=a+"?lang="+F+"&coordorder=longlat&load="+t.join(",")+"&wizard=constructor&ns="+E,l=g.match(/\/\/(.+)$/),r=l&&l[1];if(r){var e=document.getElementsByTagName("script"),B;for(var y=e.length-1;y>-1;y--){B=e[y];if(B.src.indexOf(r)!==-1&&!B.ctorInited){B.ctorInited=true;break}}if(B){w(function(){var i;if(o){i=document.getElementById(o)}var G=j();if(i){i.appendChild(G)}else{B.parentNode.insertBefore(G,B)}u(G);if(B.parentNode){B.parentNode.removeChild(B)}})}}function j(){var i=document.createElement("ymaps");i.setAttribute("id",m);i.style.display="block";i.style.width=v[0];i.style.height=v[1];return i}function u(I){var J=s.state.type;var H=window[E],G=new H.Map(I,{center:s.state.center,zoom:s.state.zoom,type:J,controls:["fullscreenControl","rulerControl","routeEditor","searchControl","trafficControl","typeSelector","zoomControl","geolocationControl"]},{autoFitToViewport:"always",searchControlProvider:"yandex#search",geoObjectStrokeOpacity:1,geoObjectFillOpacity:1,geoObjectStrokeColor:"ff0000e6",geoObjectStrokeWidth:5,geoObjectFillColor:"ff000099",geoObjectBalloonContentLayout:H.templateLayoutFactory.createClass("{{ properties.name|raw }}")});G.state.set({mapSid:s.properties.sid,mapSourceType:k});G.behaviors.disable("scrollZoom");var Q=x.presetStorage;for(var P in Q){if(Q.hasOwnProperty(P)){H.option.presetStorage.add(P,Q[P])}}if(s.state.traffic&&s.state.traffic.shown){G.controls.get("trafficControl").state.set("trafficShown",true)}var L=s.geoObjects.features;for(var K=0,O=L.length;K<O;K++){var M=L[K];G.geoObjects.add(new H.GeoObject({geometry:M.geometry,properties:M.properties},{preset:h(M.options.preset)}))}function N(){var S=document.documentElement,V=G.container.isFullscreen()?[S.clientWidth,S.clientHeight]:G.container.getSize(),X=C.minSize,W=false,T=["rulerControl","routeEditor","searchControl","trafficControl","typeSelector","zoomControl","geolocationControl"];for(var U=0,R=T.length;U<R;U++){G.controls.get(T[U]).options.set("visible",!W)}}N()}function d(i){if(!i){return"100%"}else{if(isNaN(Number(i))){return i}}return i+"px"}function h(i){if(i[0]==="#"){return f+""+i}else{return i.replace(/^twirl#/,"islands#").replace(/^default#/,"islands#").replace(/Dot$/,"Icon").replace("white","gray")}}function w(J){var I=window[E];if(I){I.ready(J)}else{var H=E+"loader";if(!window[H]){var G=document.getElementsByTagName("head")[0];var i=document.createElement("script");i.charset="utf-8";i.src=c+"&onload="+z;G.insertBefore(i,G.firstChild);window[z]=function(){var M=window[H];try{delete window[z];delete window[H]}catch(N){window[z]=window[H]=null}document.getElementsByTagName("head")[0].removeChild(M.loader);for(var L=0,K=M.queue.length;L<K;L++){M.queue[L]()}};window[H]={queue:[J],loader:i,callback:window[z]}}else{window[H].queue.push(J)}}}}({"ymj":"1.0","maps":[{"properties":{"sid":"0KQazLx5NhsIm0nEeU0qM1saaPWtj7dU","authorUid":"89499469","updated":1442955169,"created":1442955169,"favourite":0,"access":"public","name":"BITURBO.SU","description":""},"state":{"center":[30.31306,59.74235],"zoom":13,"size":[600,450],"lang":"ru-RU","type":"yandex#map","boundedBy":[[30.36456,59.76184],[30.26157,59.72285]],"traffic":{"shown":false}},"geoObjects":{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"BITURBO.SU","iconContent":""},"geometry":{"type":"Point","coordinates":[30.29916,59.73429]},"options":{"preset":"islands#lightblueDotIcon"}}]}}]},["100%","613"],"https://web.archive.org/web/20150925081301/https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0KQazLx5NhsIm0nEeU0qM1saaPWtj7dU&width=100%&height=613","0KQazLx5NhsIm0nEeU0qM1saaPWtj7dU","","ymaps_ctor","//web.archive.org/web/20150925081301/https://api-maps.yandex.ru/","","constructor"));
+
+}
+/*
+     FILE ARCHIVED ON 08:13:01 Sep 25, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:36:56 May 07, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 6.021
+  load_resource: 89.647
+  esindex: 0.011
+  exclusion.robots: 0.133
+  exclusion.robots.policy: 0.124
+  PetaboxLoader3.resolve: 51.681
+  LoadShardBlock: 61.174 (3)
+  captures_list: 105.815
+  CDXLines.iter: 35.16 (3)
+  PetaboxLoader3.datanode: 70.515 (4)
+*/
